@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+        <head>html 1st program</head>
+        <body>
+                
+            <h1>Sample</h1>
+            <p><i>topic 1</i></p>
+            <p><b>deepi</b></p>
+            <p>h<sub>2</sub>o</p>
+            <p>a+b<sup>2</sup></p>
+            <u>deepika</u>
+            <p>d<big>e</big>epik<small>a</small></p>
+            <del>something</del>
+
+        <!--Add link-->    
+
+         <p><a href="https://www.youtube.com/">link1</a></p>
+         <p><a href="https://www.facebook.com/" target="_blank">link2</a></p>
+
+         <!--download image-->
+
+         <p><a href="flower.jpg" download>download </a></p>
+         <p><a href="./images/image1/flower.jpg" download>download1</a></p>
+
+         <!--go to mail-->
+
+         <p><a href="mailto:mailid">mail</a></p>
+
+         <!--image tag width and height-->
+
+         <img width="900", height="400" title="sample image" src="./images/image1/flower.jpg" alt="flower image">
+         
+         <!--unordered list-->
+
+         <ul type="square">
+                <li>content1</li>
+                <li>content2</li>
+                <li>content3</li>
+         </ul>
+
+         <!--ordered list-->
+
+         <ol type="1" start="4">
+                <li>topic1</li>
+                <li>topic2</li>
+                <li>topic3</li>
+         </ol>
+
+         <!--description list-->
+
+         <dl>
+                <dt>banana</dt>
+                <dd>monkey's fav</dd>
+                <dt>rose</dt>
+                <dd>flower</dd>
+         </dl>
+         <br>
+
+         <!--Table-->
+
+         <table border="5">
+                <tr>
+                        <th>S.No</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Tot Mark</th>
+
+                </tr>
+                <tr>
+                        <td>1</td>
+                        <td>Deepika</td>
+                        <td>20</td>
+                        <td>434</td>
+
+                </tr>
+                <tr>
+                        <td>2</td>
+                        <td>Karthi</td>
+                        <td>16</td>
+                        <td>360</td>
+
+                </tr>
+                <tr>
+                        <td>3</td>
+                        <td>Keerthi</td>
+                        <td>22</td>
+                        <td>400</td>
+                </tr>
+         </table>
+         <table border="2">
+                <tr>
+                        <th>S.No</th>
+                        <th>Subject</th>
+                        <th>Mark</th>
+                </tr>
+                <tr>
+                        <td>1</td>
+                        <td>Tamil</td>
+                        <td>90</td>
+                </tr>
+                <tr>
+                        <td>2</td>
+                        <td>English</td>
+                        <td>90</td>
+                </tr>
+                <tr>
+                        <td colspan=2>Total</td>
+                        <td>180</td>
+                </tr>
+         </table>
+         <br>
+         <br>
+         <!---To create form--->
+         
+         <form>
+                <label for="firstname">firstName</label>
+                <input required type="text" id="firstname"  placeholder="enter your firstname...">
+                <br>
+                <label for="lastname">lastName</label>
+                <input type="text" id="lastname" placeholder="enter your lastname...">
+                <br>
+                <label>Gender</label>
+                <input type="radio" id="gender" name="gender" value="male"><label for="gender">Male</label>
+                <input type="radio" id="gender" name="gender" value="female"><lable for="gender">Female</lable>
+                <br>
+                <label for="languageknown">Language Known:</label>
+                <br>
+                <input type="checkbox" id="tamil">
+                <label for="tamil">Tamil</label>
+                <br>
+                <input type="checkbox" id="eng">
+                <label for="eng">English</label>
+                <br>
+                <input type="checkbox" id="hindi">
+                <label for="hindi">Hindi</label>
+                <br>
+                <label for="password">Password</label>
+                <input type="password" id="password">
+                <br>
+        <!--select and option--> 
+
+                <label for="nationality">Nationality</label>
+                <select name="nationality" id="nationality">
+                        <option>India</option>
+                        <option>Australia</option>
+                        <option>America</option>
+                        
+                </select>
+                <br>
+                <br>       
+        <!--optgroup-->
+
+                <label for="optgroup">option</label>
+                <select>
+                        <optgroup label="bikes">
+                                <option>yamaha</option>
+                                <option>R15</option>
+                        </optgroup>
+                </select>
+                <br>
+        <!--textarea-->
+
+                <label for="Address">Address</label><br>
+                <textarea name="address" id="Address" rows="5" cols="10"></textarea>
+                <br>
+        <!--bdo(by direction)-->
+
+                <bdo dir="rtl">tree</bdo>
+                <br>
+        <!--datalist and option-->
+
+                <label for="things">Things</label>
+                <input list="datalist" name="alpha">
+                <datalist id="datalist">
+                        <option>apple</option>
+                        <option>ball</option>
+                        <option>banana</option>
+                        <option>cat</option>
+                </datalist>
+                <br>
+                 
+        <!--fieldset and legend-->
+                
+                <fieldset>
+                        <legend>address</legend>
+                        <label for="doorno">Doorno:</label>
+                        <input type="text" id="doorno">
+                        <br><br>
+                        <label for="street">Street:</label>
+                        <input for="text" id="street">
+                        <br><br>
+                        <label for="street">State:</label>
+                        <input for="text" id="street">
+                </fieldset>
+                <br><br>
+
+        <!---iframe--->
+
+                <iframe src="https://www.facebook.com/" name="next_page" frameborder="0" height="500" width="500"></iframe>
+                <a href="https://edu.examsdaily.in/" target="next_page">Change page</a>
+                <br>
+        <!--submit and reset button-->      
+          
+                <input type="submit" id="submit">
+                <br>
+                <input type="reset" id="reset">    
+         </form>
+        </body>
+</html>
